@@ -7,3 +7,5 @@ app.set('port', 3000);
 app.use(express.static(path.join(__dirname, '../client')));
 
 app.listen(app.get('port'));
+
+app.use('/:id', express.static(path.join(__dirname, '../client')));
